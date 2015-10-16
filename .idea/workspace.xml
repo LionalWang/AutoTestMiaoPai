@@ -6,7 +6,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes/com/miaopai/test/Test.class" afterPath="$PROJECT_DIR$/bin/classes/com/miaopai/test/Test.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/classes.dex" afterPath="$PROJECT_DIR$/bin/classes.dex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/miaopai/test/Test.java" afterPath="$PROJECT_DIR$/src/com/miaopai/test/Test.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="AutoTestMiaoPai.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,11 +31,10 @@
       <file leaf-file-name="Test.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/miaopai/test/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.013740458">
-              <caret line="530" column="0" selection-start-line="530" selection-start-column="0" selection-end-line="530" selection-end-column="0" />
+            <state vertical-scroll-proportion="-11.980153">
+              <caret line="11" column="63" selection-start-line="11" selection-start-column="63" selection-end-line="11" selection-end-column="63" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#shootScreen#0;class#Test#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -386,12 +384,12 @@
       <workItem from="1444872424218" duration="6367000" />
       <workItem from="1444889462990" duration="7402000" />
       <workItem from="1444901981315" duration="1838000" />
-      <workItem from="1444957140400" duration="11568000" />
+      <workItem from="1444957140400" duration="12560000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27175000" />
+    <option name="totallyTimeSpent" value="28167000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="0" />
@@ -461,7 +459,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#shootScreen#0;class#Test#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -472,7 +469,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#shootScreen#0;class#Test#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -505,7 +501,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#shootScreen#0;class#Test#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -556,11 +551,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/miaopai/test/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.013740458">
-          <caret line="530" column="0" selection-start-line="530" selection-start-column="0" selection-end-line="530" selection-end-column="0" />
+        <state vertical-scroll-proportion="-11.980153">
+          <caret line="11" column="63" selection-start-line="11" selection-start-column="63" selection-end-line="11" selection-end-column="63" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#shootScreen#0;class#Test#0" expanded="false" />
           </folding>
         </state>
       </provider>

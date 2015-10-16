@@ -9,7 +9,7 @@ import java.io.File;
 
 public class Test extends UiAutomatorTestCase{
     public void testRecord() throws RemoteException{
-        Configurator.getInstance().setWaitForSelectorTimeout(300000);
+        Configurator.getInstance().setWaitForSelectorTimeout(120000);
 
         //准备
         UiDevice.getInstance().sleep();
@@ -505,6 +505,7 @@ public class Test extends UiAutomatorTestCase{
         //判断视频是否在下载中,若在下载则等待
         UiObject isDownloading = new UiObject(new UiSelector().textContains("下载中"));
         while (isDownloading.exists()) {
+            System.out.println("下载中...");
             sleep(2000);
         }
 
@@ -526,6 +527,7 @@ public class Test extends UiAutomatorTestCase{
         //判断视频是否在处理中,若在处理则等待
         UiObject isHandling = new UiObject(new UiSelector().textContains("视频处理中"));
         while (isHandling.exists()){
+            System.out.println("处理中...");
             sleep(2000);
         }
 

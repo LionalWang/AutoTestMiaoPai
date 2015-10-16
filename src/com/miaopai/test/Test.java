@@ -9,7 +9,7 @@ import java.io.File;
 
 public class Test extends UiAutomatorTestCase{
     public void testRecord() throws RemoteException{
-        Configurator.getInstance().setWaitForSelectorTimeout(120000);
+        Configurator.getInstance().setWaitForSelectorTimeout(60000);
 
         //准备
         UiDevice.getInstance().sleep();
@@ -23,6 +23,7 @@ public class Test extends UiAutomatorTestCase{
 
         //上划解锁
         UiDevice.getInstance().swipe(500, 1000, 500, 200, 10);
+        sleep(1000);
 
         //回到首页,打开秒拍
         UiDevice.getInstance().pressHome();
@@ -426,6 +427,7 @@ public class Test extends UiAutomatorTestCase{
 
     /**点击更多特效**/
     public void clickMoreSpecial() {
+
         //录制完成,点击更多特效
         UiObject moreSpecialButton = new UiObject(new UiSelector().text("更多特效"));
         try {
@@ -435,6 +437,7 @@ public class Test extends UiAutomatorTestCase{
         }
         System.out.println("进入更多特效成功");
         sleep(2000);
+
     }
 
 
@@ -480,11 +483,12 @@ public class Test extends UiAutomatorTestCase{
             boolean isThere = useSpecialButton.exists();
             sleep(1000);
             if (isThere) {
-                System.out.println("选择"+name+"中的,第"+layout+1+"行,第"+num+"列成功");
+                System.out.println("选择"+name+"中的,第"+(layout+1)+"行,第"+num+"列成功");
             } else {
-                System.out.println("选择"+name+"中的,第"+layout+1+"行,第"+num+"列失败");
+                System.out.println("选择"+name+"中的,第"+(layout+1)+"行,第"+num+"列失败");
             }
             useSpecialButton.click();
+            sleep(2000);
         } catch (UiObjectNotFoundException e) {
             System.out.println("错误:选择特效时出错!!!");
         }
@@ -495,27 +499,20 @@ public class Test extends UiAutomatorTestCase{
     public void useSpecial() {
 
         //使用或先下载再使用
-        UiObject useNowButton = new UiObject(new UiSelector().text("立即使用"));
+        UiObject useNowButton = new UiObject(new UiSelector().resourceId("com.yixia.videoeditor:id/imgProgress"));
         try {
-            useNowButton.clickAndWaitForNewWindow();
+            useNowButton.click();
+            sleep(1000);
         } catch (UiObjectNotFoundException e) {
             System.out.println("错误:使用特效时出错!!!");
         }
-
-        //判断视频是否在下载中,若在下载则等待
-        UiObject isDownloading = new UiObject(new UiSelector().textContains("下载中"));
-        while (isDownloading.exists()) {
-            System.out.println("下载中...");
-            sleep(2000);
-        }
-
-        System.out.println("下载,使用特效成功!");
-        sleep(2000);
     }
 
 
     /**合成视频,发布,关闭分享弹框**/
     public void publish() {
+        Configurator.getInstance().setWaitForSelectorTimeout(6000000);
+
         //视频合成
         UiObject videoFinishButton = new UiObject(new UiSelector().resourceId("com.yixia.videoeditor:id/titleRight"));
         try {
@@ -524,11 +521,13 @@ public class Test extends UiAutomatorTestCase{
             System.out.println("错误:视频合成出错!!!或可能是下载特效失败!!!");
         }
 
+        Configurator.getInstance().setWaitForSelectorTimeout(60000);
+
         //判断视频是否在处理中,若在处理则等待
         UiObject isHandling = new UiObject(new UiSelector().textContains("视频处理中"));
         while (isHandling.exists()){
             System.out.println("处理中...");
-            sleep(2000);
+            sleep(3000);
         }
 
         System.out.println("点击保存视频成功");

@@ -9,8 +9,7 @@ import java.io.File;
 
 public class Test extends UiAutomatorTestCase{
     public void testRecord() throws RemoteException{
-        Configurator.getInstance().setWaitForSelectorTimeout(180000);
-
+        Configurator.getInstance().setWaitForSelectorTimeout(300000);
 
         //准备
         UiDevice.getInstance().sleep();
@@ -479,10 +478,11 @@ public class Test extends UiAutomatorTestCase{
         try {
             UiObject useSpecialButton = specialLayout.getChild(new UiSelector().resourceId("com.yixia.videoeditor:id/play"+num));
             boolean isThere = useSpecialButton.exists();
+            sleep(1000);
             if (isThere) {
-                System.out.println("选择"+name+"中的,第"+layout+"行,第"+num+"列成功");
+                System.out.println("选择"+name+"中的,第"+layout+1+"行,第"+num+"列成功");
             } else {
-                System.out.println("选择"+name+"中的,第"+layout+"行,第"+num+"列失败");
+                System.out.println("选择"+name+"中的,第"+layout+1+"行,第"+num+"列失败");
             }
             useSpecialButton.click();
         } catch (UiObjectNotFoundException e) {
@@ -501,6 +501,13 @@ public class Test extends UiAutomatorTestCase{
         } catch (UiObjectNotFoundException e) {
             System.out.println("错误:使用特效时出错!!!");
         }
+
+        //判断视频是否在下载中,若在下载则等待
+        UiObject isDownloading = new UiObject(new UiSelector().textContains("下载中"));
+        while (isDownloading.exists()) {
+            sleep(2000);
+        }
+
         System.out.println("下载,使用特效成功!");
         sleep(2000);
     }
@@ -515,6 +522,13 @@ public class Test extends UiAutomatorTestCase{
         } catch (UiObjectNotFoundException e) {
             System.out.println("错误:视频合成出错!!!或可能是下载特效失败!!!");
         }
+
+        //判断视频是否在处理中,若在处理则等待
+        UiObject isHandling = new UiObject(new UiSelector().textContains("视频处理中"));
+        while (isHandling.exists()){
+            sleep(2000);
+        }
+
         System.out.println("点击保存视频成功");
         sleep(3000);
 

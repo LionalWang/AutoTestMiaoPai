@@ -32,15 +32,10 @@
       <file leaf-file-name="Test.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/miaopai/test/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.2335877">
-              <caret line="384" column="44" selection-start-line="384" selection-start-column="44" selection-end-line="384" selection-end-column="44" />
+            <state vertical-scroll-proportion="0.013740458">
+              <caret line="530" column="0" selection-start-line="530" selection-start-column="0" selection-end-line="530" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#record#0;class#Test#0" expanded="false" />
-                <element signature="method#clickMoreSpecial#0;class#Test#0" expanded="false" />
-                <element signature="method#selectSpecial#0;class#Test#0" expanded="false" />
-                <element signature="method#useSpecial#0;class#Test#0" expanded="false" />
-                <element signature="method#publish#0;class#Test#0" expanded="false" />
                 <element signature="method#shootScreen#0;class#Test#0" expanded="false" />
               </folding>
             </state>
@@ -391,12 +386,12 @@
       <workItem from="1444872424218" duration="6367000" />
       <workItem from="1444889462990" duration="7402000" />
       <workItem from="1444901981315" duration="1838000" />
-      <workItem from="1444957140400" duration="10015000" />
+      <workItem from="1444957140400" duration="11568000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25622000" />
+    <option name="totallyTimeSpent" value="27175000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="0" />
@@ -466,11 +461,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#record#0;class#Test#0" expanded="false" />
-            <element signature="method#clickMoreSpecial#0;class#Test#0" expanded="false" />
-            <element signature="method#selectSpecial#0;class#Test#0" expanded="false" />
-            <element signature="method#useSpecial#0;class#Test#0" expanded="false" />
-            <element signature="method#publish#0;class#Test#0" expanded="false" />
             <element signature="method#shootScreen#0;class#Test#0" expanded="false" />
           </folding>
         </state>
@@ -482,11 +472,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#record#0;class#Test#0" expanded="false" />
-            <element signature="method#clickMoreSpecial#0;class#Test#0" expanded="false" />
-            <element signature="method#selectSpecial#0;class#Test#0" expanded="false" />
-            <element signature="method#useSpecial#0;class#Test#0" expanded="false" />
-            <element signature="method#publish#0;class#Test#0" expanded="false" />
             <element signature="method#shootScreen#0;class#Test#0" expanded="false" />
           </folding>
         </state>
@@ -520,11 +505,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#record#0;class#Test#0" expanded="false" />
-            <element signature="method#clickMoreSpecial#0;class#Test#0" expanded="false" />
-            <element signature="method#selectSpecial#0;class#Test#0" expanded="false" />
-            <element signature="method#useSpecial#0;class#Test#0" expanded="false" />
-            <element signature="method#publish#0;class#Test#0" expanded="false" />
             <element signature="method#shootScreen#0;class#Test#0" expanded="false" />
           </folding>
         </state>
@@ -576,15 +556,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/miaopai/test/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.2335877">
-          <caret line="384" column="44" selection-start-line="384" selection-start-column="44" selection-end-line="384" selection-end-column="44" />
+        <state vertical-scroll-proportion="0.013740458">
+          <caret line="530" column="0" selection-start-line="530" selection-start-column="0" selection-end-line="530" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#record#0;class#Test#0" expanded="false" />
-            <element signature="method#clickMoreSpecial#0;class#Test#0" expanded="false" />
-            <element signature="method#selectSpecial#0;class#Test#0" expanded="false" />
-            <element signature="method#useSpecial#0;class#Test#0" expanded="false" />
-            <element signature="method#publish#0;class#Test#0" expanded="false" />
             <element signature="method#shootScreen#0;class#Test#0" expanded="false" />
           </folding>
         </state>

@@ -7,6 +7,7 @@ import com.android.uiautomator.testrunner.UiAutomatorTestCase;
 
 public class TestRandomRecord extends UiAutomatorTestCase {
     public void testRecordRandom() throws RemoteException {
+        /**
         //准备
         UiDevice.getInstance().sleep();
         sleep(2000);
@@ -20,6 +21,7 @@ public class TestRandomRecord extends UiAutomatorTestCase {
         //上划解锁
         UiDevice.getInstance().swipe(500, 1000, 500, 200, 10);
         sleep(1000);
+         **/
 
         //回到首页,打开秒拍
         UiDevice.getInstance().pressHome();
